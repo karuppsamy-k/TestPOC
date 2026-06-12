@@ -6,7 +6,7 @@ import { CartPage } from './pages/CartPage';
 import { ProfilePage } from './pages/ProfilePage';
 import { CategoriesPage } from './pages/CategoriesPage';
 import { StoriesPage } from './pages/StoriesPage';
-import { Home, Search, ShoppingBag, User } from 'lucide-react';
+import { Home, Search, ShoppingBag, User, LayoutGrid } from 'lucide-react';
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -34,7 +34,7 @@ function App() {
           <div className="container mx-auto px-4 md:px-8 h-16 flex justify-between items-center">
             <Link to="/">
               <h1 className="text-xl md:text-2xl font-extrabold tracking-tight text-gradient">
-                Sathis<span className="text-gray-900">.</span>
+                SShop<span className="text-gray-900">.</span>
               </h1>
             </Link>
             <div className="flex items-center space-x-4">
@@ -78,7 +78,7 @@ const BottomNav = () => {
   return (
     <>
       <NavItem to="/" icon={<Home size={22} />} label="Home" active={currentPath === '/'} />
-      <NavItem to="/search" icon={<Search size={22} />} label="Search" active={currentPath === '/search'} />
+      <NavItem to="/categories" icon={<LayoutGrid size={22} />} label="Categories" active={currentPath === '/categories'} />
       <NavItem to="/cart" icon={<ShoppingBag size={22} />} label="Cart" badge="2" active={currentPath === '/cart'} />
       <NavItem to="/profile" icon={<User size={22} />} label="Profile" active={currentPath === '/profile'} />
     </>

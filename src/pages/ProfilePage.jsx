@@ -11,7 +11,7 @@ export const ProfilePage = () => {
             S
           </div>
           <div>
-            <h2 className="text-2xl font-extrabold text-gray-900">Sathis</h2>
+            <h2 className="text-2xl font-extrabold text-gray-900">SShop User</h2>
             <p className="text-gray-500 font-medium">Premium Member</p>
           </div>
         </div>
